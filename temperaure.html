@@ -6,12 +6,16 @@
 		<title>A First Program in JavaScript</title>
 		<script type = "text/javascript">
 			
-			var c_tem;
-			c_tem = window.prompt("請輸入攝氏溫度");
-			var f_tem;
+			var Celsius;
+			Celsius = window.prompt("請輸入攝氏溫度");
 			
-			f_tem = c_tem*9/5+32;
-			document.writeln("輸入的攝氏溫度為 : "+c_tem+"   華氏溫度為 : " +f_tem);
+			function CelsiusToFahrenheit(Celsius){
+				var Fahrenheit;
+				Fahrenheit = Celsius*9/5+32;
+				return Fahrenheit;
+			}
+			
+			document.writeln("輸入的攝氏溫度為 : "+Celsius+"   華氏溫度為 : " +CelsiusToFahrenheit(Celsius));
 		</script>
 	</head>
 	<body>
